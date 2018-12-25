@@ -40,6 +40,8 @@ class Startup {
         navbar_brand.style.height = "30px";
         navbar_brand.style.backgroundPositionX = "0px";
         navbar_brand.style.backgroundPositionY = "-500px";
+        navbar_brand.style.marginTop = "10px";
+        navbar_brand.style.marginLeft = "0px";
         return 0;
     }
 }

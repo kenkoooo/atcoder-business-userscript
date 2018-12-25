@@ -2,19 +2,24 @@
 // @name        AtCoder Business
 // @namespace   AtCoderBusiness
 // @description AtCoder in working time
-// @include     https://beta.atcoder.jp/contests/arc097/tasks/arc097_d
+// @include     https://atcoder.jp/contests/*/tasks/*
 // @version     1
 // @grant       none
 // ==/UserScript==
 
 class Startup {
     public static main(): number {
-        // document.getElementById("fixed-server-timer").remove();
+        document.getElementById("fixed-server-timer").remove();
+
+        document.getElementById("task-statement").parentElement.className = "col-sm-9";
+        document.getElementById("contest-nav-tabs").className = "col-sm-3";
+        document.getElementById("contest-nav-tabs").getElementsByTagName("ul")[0].className = "nav";
+
         document.querySelector<HTMLInputElement>("#main-container").style.boxShadow = "0px 0px 0px 0px #fff";
         document.querySelector<HTMLInputElement>("#main-container").style.padding = "50px 0px 0px 0px";
         document.querySelector<HTMLInputElement>("#main-div").style.background = "#fff";
         document.querySelectorAll<HTMLInputElement>("p, span, h3, li").forEach(element => {
-            element.style.fontSize = "13px";
+            element.style.fontSize = "12px";
             element.style.fontWeight = "normal";
         });
         document.querySelectorAll<HTMLInputElement>("pre").forEach(element => {

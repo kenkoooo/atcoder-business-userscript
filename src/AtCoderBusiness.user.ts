@@ -10,6 +10,7 @@
 class Startup {
     public static main(): number {
         document.getElementById("fixed-server-timer").remove();
+        document.getElementsByClassName("contest-duration")[0].parentElement.remove();
 
         document.getElementById("task-statement").parentElement.className = "col-sm-9";
         document.getElementById("contest-nav-tabs").className = "col-sm-3";
